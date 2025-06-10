@@ -82,6 +82,8 @@ export class PlaywrightGenerator {
         return this.generateSelectStep(parameters);
       case 'playwright_custom_user_agent':
         return this.generateCustomUserAgentStep(parameters);
+      case 'record_custom_action':
+        return parameters.action as string;
       default:
         console.warn(`Unsupported tool: ${toolName}`);
         return null;

@@ -32,6 +32,8 @@
     "@playwright/browser-firefox": "1.52.0",
     "@playwright/browser-webkit": "1.52.0",
     "@playwright/test": "^1.52.0",
+    "@types/express": "^5.0.2",
+    "express": "^5.1.0",
     "mcp-evals": "^1.0.18",
     "playwright": "1.52.0",
     "uuid": "11.1.0"

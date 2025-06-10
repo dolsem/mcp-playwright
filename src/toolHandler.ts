@@ -537,6 +537,15 @@ export async function handleToolCall(
         return await saveAsPdfTool.execute(args, context);
       case "playwright_click_and_switch_tab":
         return await clickAndSwitchTabTool.execute(args, context);
+
+      case 'record_custom_action':
+        return {
+          content: [{
+            type: 'text',
+            text: 'OK',
+          }],
+          isError: false,
+        };
       
       default:
         return {
